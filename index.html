@@ -4,17 +4,18 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="style/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@300;600&display=swap" rel="stylesheet">
+    <script src="src/script.js" defer></script>
     <title>Calculadora</title>
 </head>
 
 <body>
     <div class="fundo">
-        <h1>Maiara Águeda</h1>
-
         <div class="calculadora">
             <h1>Calculadora</h1>
-            <p id="resultado"></p>
+            <p id="result"></p>
             <table>
                 <tr>
                     <td><button class="botao" onclick="clean()">C</button></td>
@@ -25,7 +26,7 @@
                 <tr>
                     <td><button class="botao" onclick="insert('7')">7</button></td>
                     <td><button class="botao" onclick="insert('8')">8</button></td>
-                    <td><button class="botao" onclick="insert('8')">8</button></td>
+                    <td><button class="botao" onclick="insert('9')">9</button></td>
                     <td><button class="botao" onclick="insert('-')">*</button></td>
                 </tr>
                 <tr>
@@ -38,7 +39,7 @@
                     <td><button class="botao" onclick="insert('1')">1</button></td>
                     <td><button class="botao" onclick="insert('2')">2</button></td>
                     <td><button class="botao" onclick="insert('3')">3</button></td>
-                    <td rowspan="2"><button id="calcular" class="botao" onclick="calcular()">=</button></td>
+                    <td rowspan="2"><button id="calcular" class="botao" onclick="calculate()">=</button></td>
                 </tr>
                 <tr>
                     <td colspan="2"><button id="zero" class="botao" onclick="insert('0')">0</button></td>
@@ -47,12 +48,20 @@
             </table>
         </div>
 
-        <p>
-            Created by <a href="https://github.com/aguedamaiara" target="_blank">Maiara Águeda.</a> Based on <a
-                href="https://github.com/Gutoneitzke/calculadora" target="_blank">Gustavo Neitzke</a>.</a>
-        </p>
+        <div class="container">
+            <h4 id="nome">Maiara Águeda</h4>
+            <div class="link">
+              <a href="https://github.com/aguedamaiara">Github <i class="fa-solid fa-square-arrow-up-right"></i></a>
+            </div>
+        
+            <div class="link">
+              <a href="https://www.linkedin.com/in/maiaraagueda/">Linkedin <i class="fa-solid fa-square-arrow-up-right"></i></a>
+              <br><br>
+            </div>
+          </div>
+         
     </div>
-    <script src="script.js"></script>
+
 </body>
 
 </html>

@@ -10,6 +10,9 @@
     text-align: center;
     position: relative;
 }
+#nome{
+    color: black;
+}
 
 .calculadora{
     position: absolute;
@@ -40,7 +43,7 @@
     width: 106px;
 }
 
-#resultado{
+#result{
     background-color: white;
     width: 207px;
     height: 30px;
@@ -49,14 +52,23 @@
     color: black;
     text-align: right;
     padding: 5px;
+    overflow: hidden;
+    white-space: nowrap;
 }
 
 
-p {
-    margin-top: 0;
-    margin-bottom: 10px;
-    line-height: 1.65; }
-    #rodape {
-        margin-top: 10px; /* Adicione esta linha para definir a margem superior */
-        text-align: center; /* Centralize o texto no rodapé */
-    }
+.container {
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%) ;
+}
+/* .container {
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+   */
+  
