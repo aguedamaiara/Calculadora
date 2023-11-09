@@ -13,6 +13,9 @@
 #nome{
     color: black;
 }
+#titulo{
+    color: #000000;
+}
 
 .calculadora{
     position: absolute;
@@ -63,12 +66,13 @@
     left: 50%;
     transform: translateX(-50%) ;
 }
-/* .container {
-    position: absolute;
-    bottom: 0;
-    left: 50%;
-    transform: translateX(-50%);
-}
 
-   */
   
+img{
+    width: 65%;
+}
+#delete{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}

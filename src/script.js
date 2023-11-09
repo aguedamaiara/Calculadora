@@ -8,7 +8,7 @@ function clean() {
 }
 
 function back() {
-    var result = document.getElementById('result').innerHTML = "";
+    var result = document.getElementById('result').innerHTML;
     document.getElementById('result').innerHTML = result.substring(0, result.length - 1);
 }
 
